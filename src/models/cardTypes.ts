@@ -23,3 +23,24 @@ export interface ImageTemplates {
   height: number;
   imageUrl: string;
 }
+
+interface CardSize {
+  id: string;
+  title: string;
+}
+
+export interface PricedCardPage {
+  title: string;
+  width: number;
+  height: number;
+  imageUrl: string;
+}
+
+export interface PricedCard {
+  title: string;
+  size: string;
+  availableSizes: CardSize[];
+  imageUrl: string;
+  price: string;
+  pages: PricedCardPage[];
+}
